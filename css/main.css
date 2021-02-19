@@ -1169,25 +1169,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner__closed {
   cursor: pointer;
-  position: relative;
-  
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  /* animation: mill 8s infinite; */
 }
 
 .banner__closed:after {
   content: url("../img/baner1/cross.png");
-  position: absolute;
-  right: -39rem;
-  top: -15px;
-  animation: mill 8s infinite;
+  
 }
-
-
-@keyframes mill {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   .banner__text {
